@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav{
+    display: flex;
+    margin-right: 70px;
+}
+
+.row_poster{
+    
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transfrom 450ms;
+}
+
+.posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+
+}
+
+/* Not working */
+.row_poster:hover{
+    
+    transform: scale(1.28);
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_postersize{
+    max-height: 250px;
+}
+
+.banner{
+    background: url(./Image/cov.webp);
+    background-size: cover;
+    height: 350px;
+    object-fit: contain;
+    
+}
+
+.bannercontent{
+    margin-left: 20px;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 45rem;
+    padding-top: 10px;
+    line-height: 1.2rem;
+    padding-top: 130px;
+    line-height: 1.2rem;
+}
+
+button{
+    background-color: rgb(54, 54, 54,0.5);    
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    border: none;
+    margin-right: 6px;
+    border-radius: 5px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: bold;
+}
+
+p{
+    padding-top: 1.0rem;
+}
+
+h1{
+    padding-bottom: 1rem;
+}
+.nav_logo{
+    width: 90px;
+}
+
+.nav_icon{
+    width: 40px;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bannerfade{
+    background: linear-gradient(180deg,transparent,rgba(18, 17, 17, 0.6)#000);
+    height: 55rem;
+}
